@@ -10,16 +10,19 @@
     <style>
         body {
             background-color: #333;
-            padding: 4rem 0;
             color: #ccc;
-
         }
-
         iframe {
             margin: auto;
         }
+        .title {
+            text-align: center;
+        }
+        .title img {
+            width: 80%;
+        }
         .ui.container {
-            margin-top: 3rem;
+            margin-top: 4rem;
         }
         .ui.segment {
             padding: 6rem;
@@ -27,10 +30,6 @@
         }
 
         h1.ui.header {
-            background: url("title.png") 7rem center no-repeat;
-            height: 162px;
-        }
-        h1.ui.header span {
             display: none;
         }
         h1.ui.header:first-child {
@@ -40,7 +39,7 @@
             color: #fff;
             display: inline-block;
             font-weight: normal;
-            border-bottom: 3px solid #666;
+            border-bottom: 3px solid #eee;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
@@ -69,7 +68,13 @@
 </head>
 <body>
 <div class="ui container">
-    <h1 class="ui center aligned header"><span>구글과 생활코딩이 함께하는 코딩야학</span></h1>
+    <div class="title">
+        <img src="title.png" alt="구글과 생활코딩이 함께하는 코딩야학" />
+    </div>
+
+    <h1 class="ui center aligned header">
+        <span>구글과 생활코딩이 함께하는 코딩야학</span>
+    </h1>
 
     <div class="ui simple segment">
         <h2 class="ui header">코딩야학</h2>
@@ -86,12 +91,13 @@
     <div class="ui simple segment">
         <h2 class="ui header">진도</h2>
         <p>진도는 공부속도를 조절하실 때 도움을 드리기 위한 힌트에 불과합니다. 더 빨리 공부하셔도 되고, 더 늦게 공부하셔도 됩니다. 완주를 하셔도 되고, 완주를 못하셔도 됩니다. 공부를 시작하는 순간 그 분야를 지배하는 가장 중요한 개념을 배우게 됩니다.  또 수업을 완주했다고 해도, 정보기술의 세계는 무한히 넓어서 끝이 없습니다. 끝이 없는 공부에서 중요한 것은 시작이고, 과정을 즐기는 것이라고 저희는 믿습니다. 그러니 완주하려고 너무 노력하지 않으셔도 됩니다. </p>
+
     </div>
     <div class="ui simple segment">
     	<h2 class="ui header">공동공부</h2>
         <p>
          구글 스프래드쉬트를 통해서 진도표를 공유하겠습니다. 각자 자기 이름을 기입해서 공부를 한 부분을 원하는 색으로 표시하면서 스터디를 이어나가면 됩니다. 각 수업에 대해서 어떤 느낌이었는지를 글로 남겨보시는 것도 좋을 것 같습니다. 
-          <a href="https://docs.google.com/spreadsheets/d/1HxteBMx3rQTiR3zYbi6b33lC3fF0a8BxJu7zUIf9LUE/edit?usp=sharing"
+	       <a href="https://docs.google.com/spreadsheets/d/1HxteBMx3rQTiR3zYbi6b33lC3fF0a8BxJu7zUIf9LUE/edit?usp=sharing"
            class="ui secondary button">공동공부 바로가기</a>
 		</p>
     </div>
