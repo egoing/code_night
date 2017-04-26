@@ -8,69 +8,133 @@
             crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
     <style>
-        body{
-            padding-top:4rem;
-            padding-bottom:4rem;
+        body {
+            background-color: #333;
+            padding: 4rem 0;
+            color: #ccc;
+
         }
-        iframe{
-            margin:auto;
+
+        iframe {
+            margin: auto;
         }
+        .ui.container {
+            margin-top: 3rem;
+        }
+        .ui.segment {
+            padding: 6rem;
+            border-radius: 0.2rem;
+        }
+
         h1.ui.header {
-            font-weight: normal;
-            padding: 2em 0;
+            background: url("title.png") 7rem center no-repeat;
+            height: 162px;
         }
-        .ui.divider {
-            margin: 4rem 0;
+        h1.ui.header span {
+            display: none;
+        }
+        h1.ui.header:first-child {
+            margin-bottom:0 !important;
+        }
+        h2.ui.header {
+            color: #fff;
+            display: inline-block;
+            font-weight: normal;
+            border-bottom: 3px solid #666;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+
+        .ui.simple.segment {
+            background-color: #222;
+            border: 0;
+            margin: 0 0 -14px 0;
+            border-bottom: 1px dashed #555;
+        }
+
+        .mov {
+            width: 640px;
+            margin: 3rem auto 0 auto;
         }
     </style>
 </head>
 <body>
-<div class="ui container text">
-    <h1 class="ui center aligned header">구글과 생활코딩이 함께하는 코딩야학</h1>
+<div class="ui container">
+    <h1 class="ui center aligned header"><span>구글과 생활코딩이 함께하는 코딩야학</span></h1>
 
-    <h2 class="ui header">행사소개</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis consequuntur cum eos in labore molestiae nam, nihil odit porro provident quae quasi quis ratione sapiente tempore temporibus tenetur voluptatibus.</p>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/1ttLx9MbrCI?rel=0" frameborder="0" allowfullscreen></iframe>
-    <div class="ui divider"> </div>
+    <div class="ui simple segment">
+        <h2 class="ui header">행사소개</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis consequuntur cum eos in labore
+            molestiae nam, nihil odit porro provident quae quasi quis ratione sapiente tempore temporibus tenetur
+            voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis consequuntur cum eos in labore
+            molestiae nam, nihil odit porro provident quae quasi quis ratione sapiente tempore temporibus tenetur
+            voluptatibus.</p>
+        <div class="mov">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/1ttLx9MbrCI?rel=0" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="ui simple segment">
+        <h2 class="ui header">참가방법</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur dignissimos est harum
+            incidunt iste libero, porro provident, quos recusandae reiciendis tenetur? Amet at autem cupiditate,
+            inventore obcaecati optio quisquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur dignissimos est harum
+            incidunt iste libero, porro provident, quos recusandae reiciendis tenetur? Amet at autem cupiditate,
+            inventore obcaecati optio quisquam.</p>
+    </div>
+    <div class="ui simple segment">
+        <h2 class="ui header">공동공부</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error exercitationem incidunt, nam
+            nesciunt nobis nulla officia omnis provident quisquam quo soluta, ut vitae? Delectus eligendi laboriosam rem
+            reprehenderit ullam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error exercitationem incidunt, nam
+            nesciunt nobis nulla officia omnis provident quisquam quo soluta, ut vitae? Delectus eligendi laboriosam rem
+            reprehenderit ullam?</p>
+        <a href="https://docs.google.com/spreadsheets/d/1HxteBMx3rQTiR3zYbi6b33lC3fF0a8BxJu7zUIf9LUE/edit?usp=sharing"
+           class="ui secondary button">공동공부 바로가기</a>
+    </div>
+    <div class="ui simple segment">
+        <h2 class="ui header">행사일정</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto at eos ipsum nobis quasi
+            qui quo ratione! Architecto labore nisi sequi. Culpa doloribus, maiores placeat qui similique
+            temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto at eos ipsum nobis quasi
+            qui quo ratione! Architecto labore nisi sequi. Culpa doloribus, maiores placeat qui similique
+            temporibus?</p>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=393a7ni0smd9b3chk5da5ktivo%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Asia%2FSeoul"
+                style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
 
-    <h2 class="ui header">참가방법</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur dignissimos est harum incidunt iste libero, porro provident, quos recusandae reiciendis tenetur? Amet at autem cupiditate, inventore obcaecati optio quisquam.</p>
-    <div class="ui divider"> </div>
+    <div class="ui simple segment">
 
-    <h2 class="ui header">공동공부</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error exercitationem incidunt, nam nesciunt nobis nulla officia omnis provident quisquam quo soluta, ut vitae? Delectus eligendi laboriosam rem reprehenderit ullam?</p>
-    <a href="https://docs.google.com/spreadsheets/d/1HxteBMx3rQTiR3zYbi6b33lC3fF0a8BxJu7zUIf9LUE/edit?usp=sharing">공동공부 바로가기</a>
-    <div class="ui divider"> </div>
+        <h2 class="ui header">댓글</h2>
+        <div id="disqus_thread"></div>
+        <script>
 
-    <h2 class="ui header">행사일정</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto at eos ipsum nobis quasi qui quo ratione! Architecto labore nisi sequi. Culpa doloribus, maiores placeat qui similique temporibus?</p>
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=393a7ni0smd9b3chk5da5ktivo%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    <div class="ui divider"> </div>
-
-
-    <h2 class="ui header">댓글</h2>
-    <div id="disqus_thread"></div>
-    <script>
-
-        /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-         var disqus_config = function () {
-         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-         };
-         */
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://kodingyahag.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+             var disqus_config = function () {
+             this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+             */
+            (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://kodingyahag.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
 
 
+    </div>
 </div>
 </body>
 </html>
