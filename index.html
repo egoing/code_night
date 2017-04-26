@@ -12,11 +12,15 @@
             background-color: #333;
             padding: 4rem 0;
             color: #ccc;
-
         }
-
         iframe {
             margin: auto;
+        }
+        .title {
+            text-align: center;
+        }
+        .title img {
+            width: 80%;
         }
         .ui.container {
             margin-top: 3rem;
@@ -27,10 +31,6 @@
         }
 
         h1.ui.header {
-            background: url("title.png") 7rem center no-repeat;
-            height: 162px;
-        }
-        h1.ui.header span {
             display: none;
         }
         h1.ui.header:first-child {
@@ -40,7 +40,7 @@
             color: #fff;
             display: inline-block;
             font-weight: normal;
-            border-bottom: 3px solid #666;
+            border-bottom: 3px solid #eee;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
@@ -61,7 +61,13 @@
 </head>
 <body>
 <div class="ui container">
-    <h1 class="ui center aligned header"><span>구글과 생활코딩이 함께하는 코딩야학</span></h1>
+    <div class="title">
+        <img src="title.png" alt="구글과 생활코딩이 함께하는 코딩야학" />
+    </div>
+
+    <h1 class="ui center aligned header">
+        <span>구글과 생활코딩이 함께하는 코딩야학</span>
+    </h1>
 
     <div class="ui simple segment">
         <h2 class="ui header">행사소개</h2>
