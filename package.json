@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/egoing/code_night/issues"
   },
-  "homepage": "https://github.com/egoing/code_night#readme"
+  "homepage": "https://github.com/egoing/code_night#readme",
+  "devDependencies": {
+    "react-addons-perf": "^15.4.2"
+  }
 }
