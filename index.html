@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
@@ -19,18 +20,13 @@
 			text-align: center;
 		}
 		
-		.title img {
-			width: 80%;
-		}
+
 		
 		.ui.container {
 			margin-top: 4rem;
 		}
 		
-		.ui.segment {
-			padding: 6rem;
-			border-radius: 0.2rem;
-		}
+
 		
 		h1.ui.header {
 			display: none;
@@ -47,6 +43,32 @@
 			border-bottom: 3px solid #eee;
 			padding-bottom: 0.5rem;
 			margin-bottom: 1.5rem;
+		}
+
+		.title img {
+			width: 80%;
+		}
+
+		@media only screen and (min-width: 992px) {
+			.ui.segment {
+				padding: 6rem;
+				border-radius: 0.2rem;
+			}
+		}
+
+		@media only screen and (max-width: 991px) and (min-width: 768px) {
+			.ui.segment {
+				padding: 4rem;
+			}
+		}
+
+		@media only screen and (max-width: 767px){
+			.ui.segment {
+				padding: 3rem;
+			}
+			.title img {
+				width: 100%;
+			}
 		}
 		
 		.ui.simple.segment {
@@ -69,6 +91,7 @@
 		
 		.illustrate>img {
 			width: 300px;
+			max-width: 90%;
 		}
 		
 		.illustrate #graph {
