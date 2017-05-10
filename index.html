@@ -49,6 +49,14 @@
 			width: 80%;
 		}
 
+		.ui.simple.segment {
+			background-color: #222;
+			border: 0;
+			margin: 0 0 -14px 0;
+			border-bottom: 1px dashed #555;
+			font-size: 1.3rem !important;
+		}
+
 		@media only screen and (min-width: 992px) {
 			.ui.segment {
 				padding: 6rem;
@@ -63,21 +71,21 @@
 		}
 
 		@media only screen and (max-width: 767px){
-			.ui.segment {
+			.ui.simple.segment {
 				padding: 3rem;
+				font-size: 1.2rem !important;
 			}
 			.title img {
 				width: 100%;
+				max-width: 92%;
+			}
+			.ui.container{
+				margin-left:0 !important;
+				margin-right:0 !important;
 			}
 		}
 		
-		.ui.simple.segment {
-			background-color: #222;
-			border: 0;
-			margin: 0 0 -14px 0;
-			border-bottom: 1px dashed #555;
-			font-size: 1.2rem !important;
-		}
+
 		
 		.mov {
 			width: 640px;
@@ -137,7 +145,7 @@
 		<div class="ui simple segment">
 			<h2 class="ui header">공동공부</h2>
 			<p>
-				온라인을 이용해서 진도표를 공유하겠습니다. 각자 자기 이름을 기입한 후에 공부한 부분을 클릭한 후에 봤어요 버튼을 누르면 됩니다.
+				온라인을 이용해서 진도표를 공유하겠습니다. 각자 자기 이름을 기입해주세요. 공부한 부분을 클릭하면 자신의 진도를 체크할 수 있습니다.
 				<a href="https://studyeverybody.ga/campaign/-KjaGlMsMJ3KQUrjVq3W" class="ui secondary button" target="_blank">공동공부 바로가기</a>
 			</p>
 			<div class="infographic">
