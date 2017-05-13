@@ -50,6 +50,11 @@ h2.ui.header {
     padding-bottom: 0;
 }
 
+.ui.simple.segment ol{
+    padding-left: 2rem;
+    line-height: 1.6;
+}
+
 @media only screen and (min-width: 992px) {
     .ui.segment {
         padding: 6rem;
@@ -116,7 +121,7 @@ h2.ui.header {
 
 .video-container-root {
     max-width: 640px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .video-container {
@@ -132,4 +137,9 @@ h2.ui.header {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 10rem !important;
 }
