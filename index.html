@@ -11,31 +11,31 @@
 			background-color: #333;
 			color: #ccc;
 		}
-		
+
 		iframe {
 			margin: auto;
 		}
-		
+
 		.title {
 			text-align: center;
 		}
-		
 
-		
+
+
 		.ui.container {
 			margin-top: 4rem;
 		}
-		
 
-		
+
+
 		h1.ui.header {
 			display: none;
 		}
-		
+
 		h1.ui.header:first-child {
 			margin-bottom: 0 !important;
 		}
-		
+
 		h2.ui.header {
 			color: #fff;
 			display: inline-block;
@@ -73,7 +73,7 @@
 
 		@media only screen and (max-width: 767px){
 			.ui.simple.segment {
-				padding: 2.5rem;
+				padding: 3rem;
 				padding-top:3rem;
 				font-size: 1.2rem !important;
 			}
@@ -86,9 +86,9 @@
 				margin-right:0 !important;
 			}
 		}
-		
 
-		
+
+
 		.mov {
 			width: 640px;
 			margin: 3rem auto 0 auto;
@@ -96,48 +96,66 @@
 
 		.illustrate {
 			text-align: center;
-			padding: 2rem;
+			padding: 3rem 2rem;
 		}
-		
+
 		.illustrate>img {
 			width: 300px;
 			max-width: 90%;
 		}
-		
+
 		.illustrate #graph {
 			width: 500px;
 		}
-		
+
 		.infographic {
 			text-align: center;
 		}
-		
+
 		.infographic img {
 			margin-top: 2rem;
 			max-width: 90%;
 		}
 
-		.aspect-ratio iframe {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0; top: 0;
+
+		/*.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px; height: 0; overflow: hidden;
+			max-width:640px;
+			max-height:360px;
+			margin:0 auto;
 		}
 
-		.videoWrapper {
-			position: relative;
-			padding-bottom: 56.25%; /* 16:9 */
-			height: 0;
-		}
-		.videoWrapper iframe {
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
 			position: absolute;
 			top: 0;
 			left: 0;
-			max-width:640px;
+			width: 100%;
 			height: 100%;
-			margin:0 auto;
-			display: block;
-		}
+		}*/
+
+        .video-container-root {
+            max-width:640px;
+            margin:0 auto;
+        }
+
+        .video-container {
+            max-width:640px;
+            padding-top: 56.25%; /* 1:1 Aspect Ratio */
+            position: relative; /* If you want text inside of it */
+        }
+
+        .video-container iframe {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
 
 	</style>
 </head>
@@ -153,7 +171,7 @@
     </h1>
 
 		<div class="ui simple segment">
-			<h2 class="ui header">코딩야학</h2>
+			<h2 class="ui header">코딩야학이란?</h2>
 			<p>세상에 나 혼자 밖에 없는 것 같은 느낌이 드는 캄캄한 밤. 혼자 공부하고 계신 분들을 응원하기 위해서 코딩야학을 개설했습니다. 나 혼자 밖에 없는 것 같지만 세상 어딘가에는 비슷한 희망, 비슷한 고민, 비슷한 목표를 가진 사람들이 있습니다. 서로 다른 곳에 있는 , 우리가 만날 수 있다면 덜 힘들고, 덜 외롭고, 더욱 재미있을 것 같지 않나요?
 				<div class="illustrate">
 					<img src="images/noun_681870_FFFFFF.png" class="illustrate">
@@ -162,46 +180,77 @@
 		</div>
 		<div class="ui simple segment">
 			<h2 class="ui header">야학운영</h2>
-			<p>코딩야학은 온라인 동영상으로 공부를 하게 됩니다. 야학에서 온라인 강의를 선정해서 한달동안 공부할 진도를 권해드립니다. 진도를 참고하면서 각자의 공간에서 각자의 시간에 공부하시면 됩니다.</p>
+			<p>
+                <ol>
+                    <li>야학에서 온라인 강의를 선정해서 한달동안 공부할 진도를 권해드립니다.</li>
+                    <li>공부하면서 막히는 부분은 현직 프로그래머들이 도움을 드립니다.</li>
+                    <li>진도가 끝난 후에는 구글 코리아에서 수료식과 해커톤을 합니다.</li>
+                </ol></p>
 			<div class="illustrate">
 				<img src="images/noun_760066_FFFFFF.png" class="illustrate">
 			</div>
 		</div>
 		<div class="ui simple segment">
-			<h2 class="ui header">공동공부</h2>
-			<p>
-				온라인을 이용해서 진도표를 공유하겠습니다. 저희는 이것을 공동공부라고 부릅니다. 공동공부에 가입한 후에 공부한 양에 따라서 진도를 표시해주세요 소감을 남기시면 더욱 좋습니다. 서로 격려하면서 나아갑시다!
-				<a href="https://studyeverybody.ga/campaign/-KjaGlMsMJ3KQUrjVq3W" class="ui secondary button" target="_blank" width="100%">공동공부 바로가기</a>
-			</p>
-			<div class="videoWrapper">
-				<iframe width="640" height="360" src="https://www.youtube.com/embed/X3NnbyHjKT4?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<h2 class="ui header">학습내용</h2>
+			<p>이번 코딩야학에서는 웹을 공부합니다. 정보기술의 심장인 웹을 통해서 컴퓨터, 인터넷, 그리고 코딩이 무엇인지를 파악해봅니다. 이 과정에서 소프트웨어를 통해서 기계를 다루는 방법에 대한 감각을 익힐 수 있습니다. 지금 바로 공부를 시작할 수 있습니다!  <a href="https://opentutorials.org/course/1688" class="ui secondary button" target="_blank" width="100%"><i class="linkify icon"></i>수업 바로가기</a></p>
+			<div class="illustrate">
+				<img src="images/noun_317704_FFFFFF.png" class="illustrate">
 			</div>
 		</div>
+		<div class="ui simple segment">
+			<h2 class="ui header">진도표</h2>
+			<p>
+				5월 30일 참가신청을 하신 분들에게 진도표를 공유하겠습니다. 진도표에는 자신의 진도를 표시할 수 있고, 소감을 남길수도 있습니다. 다른 사람들은 어떤 마음으로 공부를 하고 있는지를 살펴보면서 함께 공부합시다.
+			</p>
+            <div class="video-container-root">
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X3NnbyHjKT4?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+		</div>
+		<div class="ui simple segment">
+			<h2 class="ui header">참가신청</h2>
+			<p>어떤 분들이 공부에 참여하고 계신지 알 수 있도록 참가신청을 해주세요. 5월 30일에 이메일을 통해서 진도표를 전달해드립니다.<a href="https://goo.gl/forms/QjM8m9imDjp8zono2" class="ui secondary button" target="_blank" width="100%"><i class="linkify icon"></i>참가신청 바로가기</a></p>
+
+			<div class="illustrate">
+				<img src="images/noun_760066_FFFFFF.png" class="illustrate">
+			</div>
+		</div>
+        <div class="ui simple segment">
+            <h2 class="ui header">조력자</h2>
+            <p>
+                혼자서 공부하다보면 막히는 부분이 생길꺼예요. 이 때 누군가의 도움이 있다면 좋겠죠? 코딩야학은 공부하다가 막히는 부분이 생겼을 때 장애물을 덜 어렵게 넘을 수 있도록 조력자와 연결 시켜드립니다. 아래 칼린더를 보시면 조력자들의 스케줄이 공유되어 있습니다. 스케줄에 적혀있는 URL로 접속하시면 Youtube 실시간 중계로 이동하게 됩니다. Youtube의 채팅을 통해서 질문을 올리면 조력자들이 도움을 드립니다. <a href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="ui secondary button" target="_blank" width="100%"><i class="linkify icon"></i>행사일정 바로가기</a>
+            </p>
+            <div class="infographic">
+                <img src="images/schedule.gif" >
+            </div>
+        </div>
 		<div class="ui simple segment">
 			<h2 class="ui header">진도</h2>
 			<p>진도는 공부속도를 조절하실 때 도움을 드리기 위한 힌트에 불과합니다. 더 빨리 공부하셔도 되고, 더 늦게 공부하셔도 됩니다. 완주를 하셔도 되고, 완주를 못하셔도 됩니다. 공부를 시작하는 순간 그 분야를 지배하는 가장 중요한 개념을 배우게 됩니다. 또 수업을 완주했다고 해도, 정보기술의 세계는 무한히 넓어서 끝이 없습니다. 끝이 없는 공부에서 중요한 것은 시작이고, 과정을 즐기는 것이라고 생각합니다. 그러니 가벼운 마음으로 시작하시고, 힘들면 포기하지 마시고 유보하시면 좋겠습니다. 나중에 다시 처음부터 하시면 됩니다. 처음에 배우는 것이 제일 중요한 것이니까요. </p>
-			<div class="infographic">
+			<div class="illustrate">
 				<img id="graph" src="images/graph.png">
 			</div>
 		</div>
-		<div class="ui simple segment">
-			<h2 class="ui header">조력자</h2>
-			<p>
-				혼자서 공부하다보면 막히는 부분이 생길꺼예요. 이 때 누군가의 도움이 있다면 좋겠죠? 코딩야학은 공부하다가 막히는 부분이 생겼을 때 장애물을 덜 어렵게 넘을 수 있도록 조력자와 연결 시켜드립니다. 아래 칼린더를 보시면 조력자들의 스케줄이 공유되어 있습니다. 스케줄에 적혀있는 URL로 접속하시면 Youtube 실시간 중계로 이동하게 됩니다. Youtube의 채팅을 통해서 질문을 올리면 조력자들이 도움을 드립니다. 
-			</p>
-			<div class="infographic">
-				<img src="images/schedule.gif" >
-			</div>
-		</div>
-		<div class="ui simple segment">
-			<h2 class="ui header">행사일정</h2>
-			<p>아래는 행사일정입니다. 온라인 도움을 받고 싶은 분은 조력자들의 스케줄을 확인하시고 그 시간에 접속하시면 도움을 받을 수 있습니다. </p>
-			<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=393a7ni0smd9b3chk5da5ktivo%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-		</div>
+        <div class="ui simple segment">
+            <h2 class="ui header">완주선물</h2>
+            <p>코딩야학은 완주보다 시작을 중요하게 생각합니다. 하지만 완주하신 분들의 노력을 축하드리고, 언젠가는 완주하실 분들에게 약간의 동기를 드리기 위해서 선물을 마련했습니다. 완주하신 분에게는 수료증을 드리고, 추첨을 통해서 수료식과 해커톤에 참여할 수 있는 기회를 드립니다. 수료식과 해커톤은 구글 코리아에서 진행하고, 수도권 외의 지역에 계신 분들에게는 약간의 차비도 지원해드립니다. </p>
+            <div class="illustrate">
+                <img src="images/noun_912710_FFFFFF.png" class="illustrate">
+            </div>
+        </div>
+        <div class="ui simple segment">
+            <h2 class="ui header">해커톤</h2>
+            <p>해커톤은 해커 + 마라톤을 합성한 말입니다. 해커들이 모여서 무엇인가를 만들어보는 행사를 의미합니다. 우리는 지금은 해커가 아니지만, 해커가 될 사람들입니다. 이 시간동안 무엇을 할지는 여러분에게 달려있습니다. 평가도 시상도 하지 않습니다. 공부를 하셔도 되고, 수업의 예제를 똑같이 만들어봐도 됩니다. 예제를 수정해서 자기만의 홈페이지를 만들어도 되고, 자신만의 독자적인 프로젝트를 하셔도 됩니다. 프로그래머들이 손 닿는 곳에 대기하고 있다가 도움을 드리겠습니다.</p>
+            <div class="illustrate">
+                <img src="images/noun_621252_FFFFFF.png" class="illustrate">
+            </div>
+        </div>
 
 		<div class="ui simple segment">
 
 			<h2 class="ui header">댓글</h2>
+            <p>행사와 관련해서 궁금한 점을 질문해주세요.</p>
 			<div id="disqus_thread"></div>
 			<script>
 				/**
@@ -220,6 +269,82 @@
 					s.setAttribute('data-timestamp', +new Date());
 					(d.head || d.body).appendChild(s);
 				})();
+
+
+                jQuery.fn.fitToParent = function (options) {
+
+                    this.each(function () {
+
+                        // Cache the resize element
+                        var $el = jQuery(this);
+
+                        // Get size parent (box to fit element in)
+                        var $box;
+                        if( $el.closest('.size-parent').length ) {
+                            $box = $el.closest('.size-parent');
+                        } else {
+                            $box = $el.parent();
+                        }
+
+                        // These are the defaults.
+                        var settings = jQuery.extend({
+                            heightOffset: 0,
+                            widthOffset: 0,
+                            boxHeight: $box.height(),
+                            boxWidth: $box.width(),
+                            callback: null
+                        }, options);
+
+                        // Setup stage and element widths
+                        var elWidth = $el.attr('width');
+                        var elHeight = $el.attr('height');
+                        var stageWidth = settings.boxWidth - settings.widthOffset;
+                        var stageHeight = settings.boxHeight - settings.heightOffset;
+
+                        // Fallback to calculated width/height
+                        if( !elWidth ) {
+                            elWidth = $el.width();
+                        }
+                        if( !elHeight ) {
+                            elHeight = $el.height();
+                        }
+
+                        // Maintin aspect ratio
+                        var aspect = $el.data('aspect');
+                        if(!aspect) {
+                            aspect = elWidth / elHeight;
+                            $el.data('aspect', aspect);
+                        }
+                        var stageAspect = stageWidth / stageHeight;
+
+                        // Resize to fit box
+                        if (aspect > stageAspect) {
+                            newWidth = stageWidth;
+                            newHeight = (newWidth / aspect);
+                        } else {
+                            newHeight = stageHeight;
+                            newWidth = newHeight * aspect;
+                        }
+
+                        // Set new size of element
+                        $el.width(newWidth);
+                        $el.height(newHeight);
+
+                        // Fire callback
+                        if (typeof(settings.callback) == "function") {
+                            settings.callback(newWidth, newHeight);
+                        }
+
+                    });
+                };
+                /*// Make sure to update on resize
+                jQuery(window).on('resize', function(){
+                    // Basic usage
+                    jQuery('iframe').fitToParent();
+                });
+                jQuery(window).ready(function(){
+                    jQuery('iframe').fitToParent();
+				})*/
 			</script>
 		</div>
 	</div>
