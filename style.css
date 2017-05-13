@@ -69,19 +69,21 @@ h2.ui.header {
 
 @media only screen and (max-width: 767px) {
     .ui.simple.segment {
-        padding: 3rem;
+        padding: 2rem;
         padding-top: 3rem;
         font-size: 1.2rem !important;
     }
 
-    .title img {
-        width: 100%;
-        max-width: 92%;
+    .title{
+        background-size:250px;
+        background-position-y: 2rem;
     }
+
 
     .ui.container {
         margin-left: 0 !important;
         margin-right: 0 !important;
+        margin-top:0;
     }
 }
 
@@ -92,12 +94,11 @@ h2.ui.header {
 
 .illustrate {
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 6rem 2rem;
 }
 
 .illustrate > img {
-    width: 300px;
-    max-width: 90%;
+    max-width: 250px;
 }
 
 .illustrate #graph {
