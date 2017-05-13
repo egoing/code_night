@@ -1,0 +1,134 @@
+body {
+    background-color: #333;
+    color: #ccc;
+}
+
+iframe {
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.ui.container {
+    margin-top: 4rem;
+}
+
+h1.ui.header {
+    display: none;
+}
+
+h1.ui.header:first-child {
+    margin-bottom: 0 !important;
+}
+
+h2.ui.header {
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.title{
+    height: 177px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-image: url(images/title-mini.png);
+    background-size: 325px 165px;
+}
+
+.ui.simple.segment {
+    background-color: #222;
+    border: 0;
+    margin: 0 0 -14px 0;
+    border-bottom: 1px dashed #555;
+    font-size: 1.3rem !important;
+    padding-bottom: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .ui.segment {
+        padding: 6rem;
+        border-radius: 0.2rem;
+    }
+    .title{
+        background-image: url(images/title.png);
+        background-size: 920px 185px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .ui.segment {
+        padding: 4rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.simple.segment {
+        padding: 3rem;
+        padding-top: 3rem;
+        font-size: 1.2rem !important;
+    }
+
+    .title img {
+        width: 100%;
+        max-width: 92%;
+    }
+
+    .ui.container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+.mov {
+    width: 640px;
+    margin: 3rem auto 0 auto;
+}
+
+.illustrate {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.illustrate > img {
+    width: 300px;
+    max-width: 90%;
+}
+
+.illustrate #graph {
+    width: 500px;
+}
+
+.infographic {
+    text-align: center;
+}
+
+.infographic img {
+    margin-top: 2rem;
+    max-width: 90%;
+}
+
+.video-container-root {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.video-container {
+    max-width: 640px;
+    padding-top: 56.25%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+
+.video-container iframe {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
