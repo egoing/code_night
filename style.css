@@ -50,6 +50,8 @@ h2.ui.header {
     padding-bottom: 0;
 }
 
+
+
 .ui.simple.segment ol{
     padding-left: 2rem;
     line-height: 1.6;
@@ -77,6 +79,10 @@ h2.ui.header {
         padding: 2rem;
         padding-top: 3rem;
         font-size: 1.2rem !important;
+    }
+
+    .ui.simple.segment.first {
+        padding-top:4rem;
     }
 
     .title{
