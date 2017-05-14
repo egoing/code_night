@@ -52,9 +52,9 @@ h2.ui.header {
 
 
 
-.ui.simple.segment ol{
+.ui.simple.segment ol, .ui.simple.segment ul{
     padding-left: 2rem;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 @media only screen and (min-width: 992px) {
