@@ -163,81 +163,16 @@
                 (d.head || d.body).appendChild(s);
             })();
 
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            jQuery.fn.fitToParent = function (options) {
+            ga('create', 'UA-99089957-1', 'auto');
+            ga('send', 'pageview');
 
-                this.each(function () {
-
-                    // Cache the resize element
-                    var $el = jQuery(this);
-
-                    // Get size parent (box to fit element in)
-                    var $box;
-                    if ($el.closest('.size-parent').length) {
-                        $box = $el.closest('.size-parent');
-                    } else {
-                        $box = $el.parent();
-                    }
-
-                    // These are the defaults.
-                    var settings = jQuery.extend({
-                        heightOffset: 0,
-                        widthOffset: 0,
-                        boxHeight: $box.height(),
-                        boxWidth: $box.width(),
-                        callback: null
-                    }, options);
-
-                    // Setup stage and element widths
-                    var elWidth = $el.attr('width');
-                    var elHeight = $el.attr('height');
-                    var stageWidth = settings.boxWidth - settings.widthOffset;
-                    var stageHeight = settings.boxHeight - settings.heightOffset;
-
-                    // Fallback to calculated width/height
-                    if (!elWidth) {
-                        elWidth = $el.width();
-                    }
-                    if (!elHeight) {
-                        elHeight = $el.height();
-                    }
-
-                    // Maintin aspect ratio
-                    var aspect = $el.data('aspect');
-                    if (!aspect) {
-                        aspect = elWidth / elHeight;
-                        $el.data('aspect', aspect);
-                    }
-                    var stageAspect = stageWidth / stageHeight;
-
-                    // Resize to fit box
-                    if (aspect > stageAspect) {
-                        newWidth = stageWidth;
-                        newHeight = (newWidth / aspect);
-                    } else {
-                        newHeight = stageHeight;
-                        newWidth = newHeight * aspect;
-                    }
-
-                    // Set new size of element
-                    $el.width(newWidth);
-                    $el.height(newHeight);
-
-                    // Fire callback
-                    if (typeof(settings.callback) == "function") {
-                        settings.callback(newWidth, newHeight);
-                    }
-
-                });
-            };
-            /*// Make sure to update on resize
-             jQuery(window).on('resize', function(){
-             // Basic usage
-             jQuery('iframe').fitToParent();
-             });
-             jQuery(window).ready(function(){
-             jQuery('iframe').fitToParent();
-             })*/
         </script>
     </div>
 </div>
