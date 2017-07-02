@@ -126,7 +126,7 @@ h2.ui.header {
 .icons li {
     display: inline-block;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 @media only screen and (max-width: 516px) {
