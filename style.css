@@ -62,6 +62,10 @@ h2.ui.header {
     padding-bottom: 0;
 }
 
+.ui.simple.segment .small{
+    font-size: 1.2rem !important;
+}
+
 
 
 .ui.simple.segment ol, .ui.simple.segment ul{
@@ -109,6 +113,32 @@ h2.ui.header {
         margin-right: 0 !important;
         margin-top:0;
     }
+}
+
+.icons {
+    margin: auto 0;
+    text-align: center;
+    padding-left: 0 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.icons li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 516px) {
+    .icons li {
+        margin: 0.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
 }
 
 .mov {
