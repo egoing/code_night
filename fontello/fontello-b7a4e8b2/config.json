@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "dplw5xo88mzzr7b45nvjcamyyhni6drs",
+      "css": "book",
+      "code": 59392,
+      "src": "modernpics"
+    },
+    {
+      "uid": "653750436fc99eeb29ccd487e6a5bfa6",
+      "css": "school",
+      "code": 59444,
+      "src": "maki"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59393,
+      "src": "fontawesome"
+    }
+  ]
+}
