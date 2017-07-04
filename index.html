@@ -364,6 +364,9 @@
                     'transport': 'beacon'
                 });
             }
+            $('a').on('click', function(){
+                ga('send', 'event', 'outlink', 'click', this.href);
+            })
         </script>
     </div>
 </div>
