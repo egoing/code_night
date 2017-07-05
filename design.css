@@ -154,6 +154,10 @@ iframe {
 
 img.illustrate {
     max-width: 300px;
+    margin: 6rem 0 0 0;
+}
+.twelve img.illustrate {
+    margin-right: 4rem;
 }
 
 .illustrate #graph {
@@ -190,6 +194,11 @@ img.illustrate {
     right: 0;
 }
 
+@media only screen and (max-width: 723px) {
+    .title img {
+        width: 80%;
+    }
+}
 @media only screen and (max-width: 516px) {
     .icons li {
         margin: 0.2rem;
