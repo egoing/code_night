@@ -7,361 +7,461 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="design.css" rel="stylesheet"/>
     <link rel="stylesheet" href="fontello/css/fontello.css">
 </head>
 
 <body>
 <div class="ui container">
-    <div class="title">
-        <!--<img src="images/title.png" alt="구글과 생활코딩이 함께하는 코딩야학" />-->
+    <div class="header">
+        <h1 class="title">
+            <img src="images/title.png" alt="구글과 생활코딩이 함께하는 코딩야학" />
+        </h1>
+
+        <div class="ui basic segment link">
+                <a href="https://opentutorials.org/course/1688" target="_blank"><i class="desktop icon"></i> 수업</a>
+                <a href="https://yah.ac/2" target="_blank"><i class="tasks icon"></i> 진도표</a>
+                <a href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank"><i class="calendar outline icon"></i> 일정</a>
+        </div>
     </div>
 
-    <h1 class="ui center aligned header">
-        <span>구글과 생활코딩이 함께하는 코딩야학</span>
-    </h1>
 
-    <ul class="icons">
-        <li class="lecture icon-book">
-            <a href="https://opentutorials.org/course/1688" target="_blank"><span>수업</span></a>
-        </li>
-        <li class="yahac icon-school">
-            <a href="https://yah.ac/2" target="_blank"><span>진도표</span></a>
-        </li>
-        <li class="calendar icon-calendar">
-            <a href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-               target="_blank"><span>일정</span></a>
-        </li>
-    </ul>
+    <div class="ui grid simple segment">
 
-    <div class="ui simple segment first">
-        <h2 class="ui header">코딩야학이란?</h2>
-        <p>세상에 나 혼자 밖에 없는 것 같은 느낌이 드는 캄캄한 밤. 혼자 코딩 공부를 하고 계신 분들을 응원하기 위해서 코딩야학을 개설했습니다. 나 혼자 밖에 없는 것 같지만 세상 어딘가에는 비슷한
-            희망, 비슷한 고민,
-            비슷한 목표를 가진 사람들이 있습니다. 서로 다른 곳에 있는 , 우리가 만날 수 있다면 덜 힘들고, 덜 외롭고, 더욱 재미있을 것 같지 않나요? <br><br>
-            <div style="text-align: center;">
-                <a href="https://goo.gl/forms/KCjhLo2wyrZrBinC3" target="_blank" class="ui secondary button">참가 신청하기</a>
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">코딩야학이란?</h2>
             </div>
-        <br>
-        <div class="illustrate">
-            <img src="images/noun_681870_FFFFFF.png" class="illustrate">
-        </div>
-        </p>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">야학운영</h2>
-        <ul>
-            <li><a href="https://opentutorials.org/course/1688" target="_blank">온라인 강의</a>를 선정해드립니다</li>
-            <li>한달간의 <a href="https://yah.ac/2" target="_blank">진도</a>를 권해드립니다</li>
-            <li>진도를 참고해서 온라인으로 공부합니다</li>
-            <li>현업 개발자들이 <a
-                    href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-                    target="_blank">온라인</a>으로 돕겠습니다
-            </li>
-            <li>완주한 분들과 수료식,해커톤을 합니다</li>
-            <li class="small">10개도시에서 오프라인 수업도 진행됩니다</li>
-        </ul>
+            <div class="twelve wide column">
+                <p>세상에 나 혼자 밖에 없는 것 같은 느낌이 드는 캄캄한 밤. 혼자 코딩 공부를 하고 계신 분들을 응원하기 위해서 코딩야학을 개설했습니다. 나 혼자 밖에 없는 것 같지만 세상 어딘가에는 비슷한
+                    희망, 비슷한 고민,
+                    비슷한 목표를 가진 사람들이 있습니다. 서로 다른 곳에 있는 , 우리가 만날 수 있다면 덜 힘들고, 덜 외롭고, 더욱 재미있을 것 같지 않나요? </p>
+                <div class="ui basic center aligned segment">
+                    <a href="https://goo.gl/forms/KCjhLo2wyrZrBinC3" target="_blank" class="ui button">참가 신청하기</a>
+                </div>
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_681870.png" class="illustrate">
+                </div>
 
-        <div class="illustrate">
-            <img src="images/noun_760066_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">온라인 강의 일정 <span class="small">(2017년)</span></h2>
-        <ul>
-            <li><strong>7.3</strong> : 2기 참여자 모집 시작</li>
-            <li><strong>7.17 ~ 8.15</strong> : 함께 공부하는 기간</li>
-            <li><strong>8월 20일 이후 예정</strong> : 수료식 및 해커톤</li>
-        </ul>
-        <div class="illustrate">
-            <img src="images/noun_44065_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-
-    <div class="ui simple segment">
-        <h2 class="ui header">지역별 방문 일정 <span>(2017년)</span></h2>
-        <p>각 지역에 방문해서 코딩의 시작을 도와드리는 수업을 개최합니다. <a
-                href="#visit"
-                class="ui secondary button"><i class="linkify icon"></i>자세히 보기</a></p>
-        <ul>
-            <li><strong>7.19 확정</strong> : 서울(디캠프)</li>
-            <li><strong>7.20 예정</strong> : 경기도
-            </li>
-            <li><strong>7.22 예정</strong> : 충북
-            </li>
-            <li><strong>7.23 예정</strong> : 충남
-            </li>
-            <li><strong>7.25 예정</strong> : 경북
-            </li>
-            <li><strong>7.26 예정</strong> : 경남
-            </li>
-            <li><strong>7.30 확정</strong> : 제주(카카오)</li>
-            <li><strong>8.06 예정</strong> : 전북
-            </li>
-            <li><strong>8.07 확정</strong> : 전남 광주(광주정보문화산업진흥원)</li>
-            <li><strong>7.12 예정</strong> : 강원
-            </li>
-        </ul>
-        <div class="illustrate">
-            <img src="images/noun_709976_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-
-    <div class="ui simple segment">
-        <h2 class="ui header">야학의 뾰족한 목표</h2>
-        <p>코딩을 통해서 웹을, 웹을 통해서 코딩을 배우는 것입니다. 자연스럽게 인터넷과 컴퓨터에 대해서도 더 잘알게 될 것입니다. 우리수업의 장점은 이렇습니다.
-        <p>
-        <ul>
-            <li>누구나 무료로 사용할 수 있는 공공재를 다룹니다</li>
-            <li>공부를 하기 위해서 컴퓨터와 인터넷만 있으면 됩니다</li>
-            <li>중요했고, 더욱 중요해질 기술들을 배웁니다</li>
-        </ul>
-        <br><br>
-        <div class="illustrate">
-            <img src="images/noun_1029946_FFFFFF.png">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">야학의 넓은 목표</h2>
-        <p>기계를 보다 자유롭게 다루게 되는 것 입니다. 아래와 같은 변화가 사회에 가져올 변화를 한번 상상해보시죠. 이러한 변화를 준비하는 것이 수업의 목표입니다.
-        <p>
-        <ul>
-            <li>코딩으로 제어되는 기계가 늘고 있습니다</li>
-            <li>코딩이 쉬워지고 있습니다</li>
-        </ul>
-        <br><br><br>
-        <div class="illustrate">
-            <img src="images/noun_1118508_FFFFFF.png">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">수업내용</h2>
-        <p>
-        <ol>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>apache</li>
-            <li>서버측 기술(PHP)</li>
-            <li>데이터베이스(MySQL)</li>
-            <li>클라우드 컴퓨팅</li>
-            <li>보안</li>
-        </ol>
-        <br>
-        <a href="https://opentutorials.org/course/1688" class="ui secondary button"><i class="linkify icon"></i>수업
-            바로가기</a>
-        </p>
-        <div class="illustrate">
-            <img src="images/noun_317704_FFFFFF.png">
-        </div>
-        <p>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">난이도</h2>
-        <p>
-            고등학생 이상에게 권장됩니다. 중학생도 공부할 수 있지만 다소 어렵게 느껴질 수 있습니다. 초등학생은 보호자가 함께 공부하시되 진도에는 신경 쓰지 마시고, 처음 시작하는 부분을 천천히 음미하면서
-            흥미를
-            느끼는 곳까지만 공부할 수 있도록 유도해주시면 좋겠습니다. HTML, CSS까지를 한달에 걸쳐서 진행하는 것도 좋은 생각입니다. 코딩야학에는 공통의 관심사를 가진 다양한 배경과 세대의 사람들이 함께 합니다. 아이와 함께 참여하신다면 아이들이 세상을 만나볼 수 있는
-            좋은
-            기회가 될 것입니다. 공부하면서 1기 졸업자들의 사연을 함께 읽어보셔도 좋을 것 같습니다. <a
-                href="http://code-live.ga/disqus/ourstory"
-                class="ui secondary button"><i class="linkify icon"></i>1기 사연 보러가기</a>
-        </p>
-        <div class="illustrate">
-            <img src="images/noun_243029_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">진도표 및 참가신청</h2>
-        <p>
-            진도표에는 30일 분량으로 진도가 쪼개져 있습니다. 진도표를 참고해서 공부하시면 됩니다. 자신의 진도를 표시할 수 있고, 다른 사람과 공부하는 마음을 공유할수도 있습니다. 진도표를 기준으로
-            완주하신
-            분들에게 수료증을 드립니다. 또 해커톤에 참여할 수 있는 기회를 드립니다. 야학 참여를 희망하는 분은 진도표에 참여해주세요. 개강을 기다리지 마시고 지금 바로 시작하셔도
-            됩니다.<a href="https://yah.ac/2"
-                   class="ui secondary button" target="_blank"><i
-                class="linkify icon"></i>진도표 바로가기</a>
-        </p>
-        <div class="video-container-root">
-            <div class="video-container">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tSqUPIfAKDY" frameborder="0"
-                        allowfullscreen></iframe>
             </div>
         </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">진도</h2>
-        <p>진도는 공부속도를 조절하실 때 도움을 드리기 위한 도구에 불과합니다. 진도가 목표가 되는 것은 주인과 손님이 바뀐 것입니다. 우리의 목표는 진도가 아니고 지식입니다. 지식이 아니고 기술을 이용해서
-            진짜로
-            우리의 삶을 개선하는 경험입니다. 이런 경험이 축적되면 배움에 대한 즐거움을 회복할 수 있을 것입니다.
+        <div class="line"></div>
 
-            <br><br>더 빨리 공부하셔도 되고, 더 늦게 공부하셔도 됩니다. 완주하셔도 되고, 완주를 못하셔도 됩니다. 공부를 시작하는 순간 그 분야를 지배하는 가장 중요한 개념을
-            배우게
-            됩니다. 또 수업을 완주했다고 해도, 정보기술의 세계는 무한히 넓어서 끝이 없습니다. 끝이 없는 공부에서 중요한 것은 시작이고, 과정을 즐기는 것이라고 생각합니다. 그러니 가벼운 마음으로
-            시작하시고,
-            힘들면 포기하지 마시고 유보하시면 좋겠습니다. 나중에 다시 처음부터 하시면 됩니다. 처음에 배우는 것이 제일 중요한 것이니까요. </p>
-        <div class="video-container-root">
-            <div class="video-container">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JuD76a1wQwo" frameborder="0"
-                        allowfullscreen></iframe>
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">야학운영</h2>
+            </div>
+            <div class="twelve wide column">
+                <ul class="ui list">
+                    <li class="item"><a href="https://opentutorials.org/course/1688" target="_blank">온라인 강의</a>를 선정해드립니다</li>
+                    <li class="item">한달간의 <a href="https://yah.ac/2" target="_blank">진도</a>를 권해드립니다</li>
+                    <li class="item">진도를 참고해서 온라인으로 공부합니다</li>
+                    <li class="item">현업 개발자들이 <a
+                            href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                            target="_blank">온라인</a>으로 돕겠습니다
+                    </li>
+                    <li class="item">완주한 분들과 수료식,해커톤을 합니다</li>
+                    <li class="item">10개도시에서 오프라인 수업도 진행됩니다</li>
+                </ul>
+
+
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_760066.png" class="illustrate">
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    온라인 강의 일정
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <h3 class="ui left aligned header">2017년</h3>
+                <ul class="ui list">
+                    <li class="item"><strong>7.3</strong> : 2기 참여자 모집 시작</li>
+                    <li class="item"><strong>7.17 ~ 8.15</strong> : 함께 공부하는 기간</li>
+                    <li class="item"><strong>8월 20일 이후 예정</strong> : 수료식 및 해커톤</li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_44065.png" class="illustrate">
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    지역별 방문 일정
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <h3 class="ui left aligned header">2017년</h3>
+                <p>각 지역에 방문해서 코딩의 시작을 도와드리는 수업을 개최합니다. <a href="#visit" class="ui secondary button"><i class="linkify icon"></i>자세히 보기</a></p>
+                <ul class="ui list">
+                    <li class="item"><strong>7.19 확정</strong> : 서울(디캠프)</li>
+                    <li class="item"><strong>7.20 예정</strong> : 경기도</li>
+                    <li class="item"><strong>7.22 예정</strong> : 충북</li>
+                    <li class="item"><strong>7.23 예정</strong> : 충남</li>
+                    <li class="item"><strong>7.25 예정</strong> : 경북</li>
+                    <li class="item"><strong>7.26 예정</strong> : 경남</li>
+                    <li class="item"><strong>7.30 확정</strong> : 제주(카카오)</li>
+                    <li class="item"><strong>8.06 예정</strong> : 전북</li>
+                    <li class="item"><strong>8.07 확정</strong> : 전남 광주(광주정보문화산업진흥원)</li>
+                    <li class="item"><strong>7.12 예정</strong> : 강원</li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_709976.png" class="illustrate">
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    야학의 뾰족한 목표
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>코딩을 통해서 웹을, 웹을 통해서 코딩을 배우는 것입니다. 자연스럽게 인터넷과 컴퓨터에 대해서도 더 잘알게 될 것입니다. 우리수업의 장점은 이렇습니다.
+
+                <ul class="ui list">
+                    <li class="item">누구나 무료로 사용할 수 있는 공공재를 다룹니다</li>
+                    <li class="item">공부를 하기 위해서 컴퓨터와 인터넷만 있으면 됩니다</li>
+                    <li class="item">중요했고, 더욱 중요해질 기술들을 배웁니다</li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_1029946.png" class="illustrate">
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    야학의 넓은 목표
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>기계를 보다 자유롭게 다루게 되는 것 입니다. 아래와 같은 변화가 사회에 가져올 변화를 한번 상상해보시죠. 이러한 변화를 준비하는 것이 수업의 목표입니다.
+
+                <ul class="ui list">
+                    <li class="item">코딩으로 제어되는 기계가 늘고 있습니다</li>
+                    <li class="item">코딩이 쉬워지고 있습니다</li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_1118508.png" class="illustrate">
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    수업내용
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>기계를 보다 자유롭게 다루게 되는 것 입니다. 아래와 같은 변화가 사회에 가져올 변화를 한번 상상해보시죠. 이러한 변화를 준비하는 것이 수업의 목표입니다.</p>
+
+                <ol class="ui list">
+                    <li class="item">html</li>
+                    <li class="item">css</li>
+                    <li class="item">javascript</li>
+                    <li class="item">apache</li>
+                    <li class="item">서버측 기술(PHP)</li>
+                    <li class="item">데이터베이스(MySQL)</li>
+                    <li class="item">클라우드 컴퓨팅</li>
+                    <li class="item">보안</li>
+                </ol>
+
+
+                <div class="ui basic center aligned segment">
+                    <a href="https://opentutorials.org/course/1688" class="ui secondary button"><i class="linkify icon"></i>수업 바로가기</a>
+                </div>
+
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_317704.png" class="illustrate">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    수업내용
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>고등학생 이상에게 권장됩니다. 중학생도 공부할 수 있지만 다소 어렵게 느껴질 수 있습니다. 초등학생은 보호자가 함께 공부하시되 진도에는 신경 쓰지 마시고, 처음 시작하는 부분을 천천히 음미하면서 흥미를 느끼는 곳까지만 공부할 수 있도록 유도해주시면 좋겠습니다. HTML, CSS까지를 한달에 걸쳐서 진행하는 것도 좋은 생각입니다. 코딩야학에는 공통의 관심사를 가진 다양한 배경과 세대의 사람들이 함께 합니다. 아이와 함께 참여하신다면 아이들이 세상을 만나볼 수 있는 좋은 기회가 될 것입니다. 공부하면서 1기 졸업자들의 사연을 함께 읽어보셔도 좋을 것 같습니다. <a href="http://code-live.ga/disqus/ourstory" class="ui secondary button"><i class="linkify icon"></i>1기 사연 보러가기</a></p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_243029.png" class="illustrate">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    진도표 및 참가신청
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>진도표에는 30일 분량으로 진도가 쪼개져 있습니다. 진도표를 참고해서 공부하시면 됩니다. 자신의 진도를 표시할 수 있고, 다른 사람과 공부하는 마음을 공유할수도 있습니다. 진도표를 기준으로 완주하신 분들에게 수료증을 드립니다. 또 해커톤에 참여할 수 있는 기회를 드립니다. 야학 참여를 희망하는 분은 진도표에 참여해주세요. 개강을 기다리지 마시고 지금 바로 시작하셔도 됩니다.<a href="https://yah.ac/2" class="ui secondary button" target="_blank"><i class="linkify icon"></i>진도표 바로가기</a></p>
+
+                <div class="video-container-root">
+                    <div class="video-container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tSqUPIfAKDY" frameborder="0"  allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    진도
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>진도는 공부속도를 조절하실 때 도움을 드리기 위한 도구에 불과합니다. 진도가 목표가 되는 것은 주인과 손님이 바뀐 것입니다. 우리의 목표는 진도가 아니고 지식입니다. 지식이 아니고 기술을 이용해서 진짜로 우리의 삶을 개선하는 경험입니다. 이런 경험이 축적되면 배움에 대한 즐거움을 회복할 수 있을 것입니다.<br><br>더 빨리 공부하셔도 되고, 더 늦게 공부하셔도 됩니다. 완주하셔도 되고, 완주를 못하셔도 됩니다. 공부를 시작하는 순간 그 분야를 지배하는 가장 중요한 개념을 배우게 됩니다. 또 수업을 완주했다고 해도, 정보기술의 세계는 무한히 넓어서 끝이 없습니다. 끝이 없는 공부에서 중요한 것은 시작이고, 과정을 즐기는 것이라고 생각합니다. 그러니 가벼운 마음으로 시작하시고, 힘들면 포기하지 마시고 유보하시면 좋겠습니다. 나중에 다시 처음부터 하시면 됩니다. 처음에 배우는 것이 제일 중요한 것이니까요. </p>
+
+                <div class="video-container-root">
+                    <div class="video-container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JuD76a1wQwo" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    조력자
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>혼자서 공부하다 보면 막히는 부분이 생길 거예요. 이때 누군가의 도움이 있다면 좋겠죠? 코딩야학은 공부하다가 막히는 부분이 생겼을 때 장애물을 덜 어렵게 넘을 수 있도록 조력자와 연결 시켜 드립니다. 아래 달력을 보시면 조력자들의 일정이 공유되어 있습니다. 일정에 도움을 받을 수 있는 방법이 적혀있습니다. 이것을 참고하셔서 도움을 받으면 됩니다.<a href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="ui secondary button"><i class="linkify icon"></i>행사일정 바로가기</a></p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/schedule.gif" style="max-width:426px; width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    지역방문
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>지역방문은 각 지역별로 코딩의 시작을 도와드리기 위해서 마련되었습니다. 4시간동안 코딩 입문 수업이 진행되고, 조력자가 동행하는 경우 기술이나 진로에 대한 상담도 함께 제공됩니다. 여기에서 다뤄지는 내용은 아래와 같습니다.</p>
+
+                <ol class="ui list">
+                    <li class="item">웹의 역사</li>
+                    <li class="item">HTML</li>
+                    <li class="item">HTML 이후에 등장한 여러 기술들</li>
+                </ol>
+
+                <p>지역 방문을 위해서 지역별 파트너 기관이나 기업을 모집하고 있습니다. <a href="https://goo.gl/forms/Xo4Ssfy4UfFJ3pk02" target="_blank" class="ui secondary button"><i class="linkify icon"></i>코딩야학 지역 파트너 신청</a></p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_62361.png" class="illustrate">
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    선물
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>코딩야학은 완주보다 시작을 중요하게 생각합니다. 하지만 완주하신 분들의 노력을 축하하고, 언젠가는 완주하실 분들에게 약간의 동기를 드리기 위해서 선물을 마련했습니다. 완주하신 분에게는 수료증을 드리고, 추첨을 통해서 수료식과 해커톤에 참여할 기회를 드립니다. 수료식과 해커톤은 구글 코리아에서 진행하고, 수도권 외의 지역에 계신 분들에게는 약간의 차비도 지원해 드립니다.</p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_912710.png" class="illustrate">
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    be해커톤
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>be해커톤은 be + 해커 + 마라톤을 합성한 말입니다. 해커는 컴퓨터를 잘 다루는 사람을 의미합니다. 해커톤은 해커들이 모여서 무엇인가를 만들어보는 행사를 의미합니다. 우리는 지금 당장은 해커가 아니지만 해커가 될 사람이기 때문에 be가 붙었습니다. 이 시간 동안 무엇을 할지는 여러분에게 달려있습니다. 평가도 시상도 하지 않습니다. 공부를 하셔도 되고, 수업의 예제를 똑같이 만들어봐도 됩니다. 예제를 수정해서 자기만의 홈페이지를 만들어도 되고, 자신만의 독자적인 프로젝트를 하셔도 됩니다. 현업의 프로그래머들이 손 닿는 곳에 대기하고 있다가 도움을 드리겠습니다. 모든 분을 모실 수 없기 때문에 추첨으로 참여자를 선발할 계획입니다.</p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_621252.png" class="illustrate">
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">
+                    자주 묻는 질문
+                </h2>
+            </div>
+            <div class="twelve wide column">
+                <p>아래 페이지에 자주 묻는 질문을 정리 해두었습니다.<a href="https://docs.google.com/document/d/1mQbmdwZ1ylI3eDDRk8HiSKMrYhfBInH6HiGuK0pC9c0/pub" class="ui secondary button"><i class="linkify icon"></i>자주 묻는 질문</a></p>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_927374.png" class="illustrate">
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">1기 활동 소개</h2>
+            </div>
+            <div class="twelve wide column">
+                <p>이전 기수인 1기 참여자들의 활동을 소개합니다.</p>
+                <ul class="ui list">
+                    <li class="item"><a href="https://yah.ac/1" target="_blank">1기의 진도표</a></li>
+                    <li class="item"><a href="https://code-live.ga/disqus/ourstory" target="_blank">1기의 코딩야학 소감</a></li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_5927.png" class="illustrate">
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">코딩야학의 주역</h2>
+            </div>
+            <div class="twelve wide column">
+                <p>코딩야학을 위해서 힘써주신 단체/기관/기업/개인을 소개합니다.</p>
+                <ul class="ui list">
+                    <li class="item"><a href="https://google.com">구글</a> : 야학의 뒷바라지</li>
+                    <li class="item"><a href="https://opentutorials.org">오픈튜토리얼스</a> : 컨텐츠 플랫폼 제공</li>
+                    <li class="item"><a href="http://www.kakaocorp.com/main">디캠프</a> : 2기 서울 방문 수업 지원</li>
+                    <li class="item"><a href="http://www.kakaocorp.com/main">카카오</a> : 2기 제주 방문 수업 지원</li>
+                    <li class="item"><a href="http://www.gitct.kr/main.php">광주정보문화산업진흥원</a> : 2기 광주 방문 수업 지원</li>
+                    <li class="item"><a href="https://opentutorials.org/course/1">생활코딩</a> : 컨텐츠 제공과 운영</li>
+                    <li class="item">이태호 : 조력자(학습지원)</li>
+                    <li class="item">이숙번 : 조력자(학습지원)</li>
+                    <li class="item">홍민기 : 조력자(학습지원)</li>
+                    <li class="item">이현석 : 조력자(학습지원)</li>
+                    <li class="item">이고잉 : 조력자(학습지원)</li>
+                    <li class="item">리체 : 홈페이지 디자인</li>
+                </ul>
+
+                <div class="ui basic center aligned segment">
+                    <img src="images/noun_16724.png" class="illustrate">
+                </div>
             </div>
         </div>
     </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">조력자</h2>
-        <p>
-            혼자서 공부하다 보면 막히는 부분이 생길 거예요. 이때 누군가의 도움이 있다면 좋겠죠? 코딩야학은 공부하다가 막히는 부분이 생겼을 때 장애물을 덜 어렵게 넘을 수 있도록 조력자와 연결 시켜
-            드립니다.
-            아래 달력을 보시면 조력자들의 일정이 공유되어 있습니다. 일정에 도움을 받을 수 있는 방법이 적혀있습니다. 이것을 참고하셔서 도움을 받으면 됩니다.<a
-                href="https://calendar.google.com/calendar/embed?src=MzkzYTduaTBzbWQ5YjNjaGs1ZGE1a3Rpdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-                class="ui secondary button"><i class="linkify icon"></i>행사일정 바로가기</a>
-        </p>
-        <div class="illustrate">
-            <img src="images/schedule.gif" style="max-width:426px; width:100%">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header" id="visit">지역방문</h2>
-        <p>
-            지역방문은 각 지역별로 코딩의 시작을 도와드리기 위해서 마련되었습니다. 4시간동안 코딩 입문 수업이 진행되고, 조력자가 동행하는 경우 기술이나 진로에 대한 상담도 함께 제공됩니다. 여기에서
-            다뤄지는
-            내용은 아래와 같습니다.
-        </p>
-        <ol>
-            <li>웹의 역사</li>
-            <li>HTML</li>
-            <li>HTML 이후에 등장한 여러 기술들</li>
-        </ol>
-        <br>
-        지역 방문을 위해서 지역별 파트너 기관이나 기업을 모집하고 있습니다. <a
-            href="https://goo.gl/forms/Xo4Ssfy4UfFJ3pk02" target="_blank"
-            class="ui secondary button"><i class="linkify icon"></i>코딩야학 지역 파트너 신청</a>
-        <div class="illustrate">
-            <img src="images/noun_62361_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">선물</h2>
-        <p>코딩야학은 완주보다 시작을 중요하게 생각합니다. 하지만 완주하신 분들의 노력을 축하하고, 언젠가는 완주하실 분들에게 약간의 동기를 드리기 위해서 선물을 마련했습니다. 완주하신 분에게는 수료증을
-            드리고,
-            추첨을 통해서 수료식과 해커톤에 참여할 기회를 드립니다. 수료식과 해커톤은 구글 코리아에서 진행하고, 수도권 외의 지역에 계신 분들에게는 약간의 차비도 지원해 드립니다.</p>
-        <div class="illustrate">
-            <img src="images/noun_912710_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">be해커톤</h2>
-        <p>be해커톤은 be + 해커 + 마라톤을 합성한 말입니다. 해커는 컴퓨터를 잘 다루는 사람을 의미합니다. 해커톤은 해커들이 모여서 무엇인가를 만들어보는 행사를 의미합니다. 우리는 지금 당장은 해커가
-            아니지만 해커가 될 사람이기 때문에 be가 붙었습니다.
-            이
-            시간 동안 무엇을 할지는 여러분에게 달려있습니다. 평가도 시상도 하지 않습니다. 공부를
-            하셔도 되고, 수업의 예제를 똑같이 만들어봐도 됩니다. 예제를 수정해서 자기만의 홈페이지를 만들어도 되고, 자신만의 독자적인 프로젝트를 하셔도 됩니다. 현업의 프로그래머들이 손 닿는 곳에
-            대기하고
-            있다가 도움을 드리겠습니다. 모든 분을 모실 수 없기 때문에 추첨으로 참여자를 선발할 계획입니다.</p>
-        <div class="illustrate">
-            <img src="images/noun_621252_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">자주 묻는 질문</h2>
-        <p>아래 페이지에 자주 묻는 질문을 정리 해두었습니다.<a
-                href="https://docs.google.com/document/d/1mQbmdwZ1ylI3eDDRk8HiSKMrYhfBInH6HiGuK0pC9c0/pub"
-                class="ui secondary button"><i class="linkify icon"></i>자주 묻는 질문</a>
-        <div class="illustrate">
-            <img src="images/noun_927374_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
 
-    <div class="ui simple segment">
-        <h2 class="ui header">1기 활동 소개</h2>
-        <p>이전 기수인 1기 참여자들의 활동을 소개합니다.</p>
-        <ul>
-            <li><a href="https://yah.ac/1" target="_blank">1기의 진도표</a></li>
-            <li><a href="https://code-live.ga/disqus/ourstory" target="_blank">1기의 코딩야학 소감</a></li>
-        </ul>
-
-        <div class="illustrate">
-            <img src="images/noun_5927_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
-        <h2 class="ui header">코딩야학의 주역</h2>
-        <p>코딩야학을 위해서 힘써주신 단체/기관/기업/개인을 소개합니다.
-        <ul>
-            <li><a href="https://google.com">구글</a> : 야학의 뒷바라지</li>
-            <li><a href="https://opentutorials.org">오픈튜토리얼스</a> : 컨텐츠 플랫폼 제공</li>
-            <li><a href="http://www.kakaocorp.com/main">디캠프</a> : 2기 서울 방문 수업 지원</li>
-            <li><a href="http://www.kakaocorp.com/main">카카오</a> : 2기 제주 방문 수업 지원</li>
-            <li><a href="http://www.gitct.kr/main.php">광주정보문화산업진흥원</a> : 2기 광주 방문 수업 지원</li>
-            <li><a href="https://opentutorials.org/course/1">생활코딩</a> : 컨텐츠 제공과 운영</li>
-            <li>이태호 : 조력자(학습지원)</li>
-            <li>이숙번 : 조력자(학습지원)</li>
-            <li>홍민기 : 조력자(학습지원)</li>
-            <li>이현석 : 조력자(학습지원)</li>
-            <li>이고잉 : 조력자(학습지원)</li>
-            <li>리체 : 홈페이지 디자인</li>
-        </ul>
-        <div class="illustrate">
-            <img src="images/noun_16724_FFFFFF.png" class="illustrate">
-        </div>
-    </div>
-    <div class="ui simple segment">
+    <div class="ui simple center aligned segment">
         <p class="center">자 그럼<br>화이팅<br><br>
             <a href="https://goo.gl/forms/KCjhLo2wyrZrBinC3" target="_blank" class="ui secondary button">참가 신청하기</a>
 
         </p>
     </div>
 
-    <div class="ui simple segment">
+    <div class="ui grid simple segment">
+        <div class="row">
+            <div class="four wide column">
+                <h2 class="ui header">댓글</h2>
+            </div>
+            <div class="twelve wide column">
+                <p>행사와 관련해서 궁금한 점이나, 참가하는 마음을 적어주세요. 나중에 후기와 비교해보면 재미있겠죠?</p>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                     var disqus_config = function () {
+                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     };
+                     */
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://kodingyahag.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <script>
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r;
+                        i[r] = i[r] || function () {
+                                (i[r].q = i[r].q || []).push(arguments)
+                            }, i[r].l = 1 * new Date();
+                        a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                        a.async = 1;
+                        a.src = g;
+                        m.parentNode.insertBefore(a, m)
+                    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                    ga('create', 'UA-99089957-1', 'auto');
+                    ga('send', 'pageview');
+                </script>
+                <script>
+                    /**
+                     * Function that tracks a click on an outbound link in Analytics.
+                     * This function takes a valid URL string as an argument, and uses that URL string
+                     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+                     * using 'navigator.sendBeacon' in browser that support it.
+                     */
+                    trackOutboundLink = function (e) {
+                        ga('send', 'event', 'outbound', 'click', e.target.href, {
+                            'transport': 'beacon'
+                        });
+                    }
+                </script>
+            </div>
+        </div>
 
-        <h2 class="ui header">댓글</h2>
-        <p>행사와 관련해서 궁금한 점이나, 참가하는 마음을 적어주세요. 나중에 후기와 비교해보면 재미있겠죠?</p>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*
-             var disqus_config = function () {
-             this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-             };
-             */
-            (function () { // DON'T EDIT BELOW THIS LINE
-                var d = document,
-                    s = d.createElement('script');
-                s.src = 'https://kodingyahag.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-99089957-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <script>
-            /**
-             * Function that tracks a click on an outbound link in Analytics.
-             * This function takes a valid URL string as an argument, and uses that URL string
-             * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-             * using 'navigator.sendBeacon' in browser that support it.
-             */
-            trackOutboundLink = function (e) {
-                ga('send', 'event', 'outbound', 'click', e.target.href, {
-                    'transport': 'beacon'
-                });
-            }
-        </script>
     </div>
 </div>
 </body>
