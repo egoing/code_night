@@ -195,12 +195,6 @@ img.illustrate {
     .ui.container {
         width : 980px;
     }
-    .ui.segment .pc {
-        display: block;
-    }
-    .ui.segment .mobile {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 723px) {
@@ -209,12 +203,6 @@ img.illustrate {
     }
     .header .title {
         padding:2em 0 0 0;
-    }
-    .ui.segment .pc {
-        display: none;
-    }
-    .ui.segment .mobile {
-        display: block;
     }
 }
 @media only screen and (max-width: 516px) {
