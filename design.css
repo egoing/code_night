@@ -1,6 +1,5 @@
 body {
-    background: url("images/bg-items.png") #283640 no-repeat center top;
-
+    background: url("images/bg-items.png") #283640 repeat-x center top;
 }
 
 @font-face {
@@ -33,15 +32,15 @@ iframe {
     text-align: center;
 }
 .header .title {
-    padding:8rem 5rem 0 0;
+    padding:3.5em 0 0 0;
     text-align: center;
 }
 .header .link a{
     color: #ccc;
     display: inline-block;
-    margin: 0 1.5rem;
-    padding: 10px 5px;
-    font-size: 1.2rem;
+    margin: 0.5em;
+    padding: 5px;
+    font-size: 1.1rem;
     border-bottom:2px solid #283640;
 }
 .header .link a:hover {
@@ -156,9 +155,7 @@ img.illustrate {
     max-width: 300px;
     margin: 6rem 0 0 0;
 }
-.twelve img.illustrate {
-    margin-right: 4rem;
-}
+
 
 .illustrate #graph {
     width: 500px;
@@ -194,14 +191,30 @@ img.illustrate {
     right: 0;
 }
 
+@media only screen and (min-width: 1200px) {
+    .ui.container {
+        width : 980px;
+    }
+}
+
 @media only screen and (max-width: 723px) {
     .title img {
         width: 80%;
     }
+    .header .title {
+        padding:2em 0 0 0;
+    }
 }
 @media only screen and (max-width: 516px) {
+    body {
+        background-size: 200% auto;
+    }
     .icons li {
         margin: 0.2rem;
         font-size: 1.2rem;
     }
+    img.illustrate {
+        width: 100%;
+    }
+
 }
