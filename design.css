@@ -195,10 +195,10 @@ img.illustrate {
     .ui.container {
         width : 980px;
     }
-    .ui.segment.pc {
+    .ui.segment .pc {
         display: block;
     }
-    .ui.segment.mobile {
+    .ui.segment .mobile {
         display: none;
     }
 }
@@ -210,10 +210,10 @@ img.illustrate {
     .header .title {
         padding:2em 0 0 0;
     }
-    .ui.segment.pc {
+    .ui.segment .pc {
         display: none;
     }
-    .ui.segment.mobile {
+    .ui.segment .mobile {
         display: block;
     }
 }
