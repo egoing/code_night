@@ -1,6 +1,5 @@
 body {
-    background-color: #333;
-    color: #ccc;
+    background: url("images/bg-items.png") #283640 repeat-x center top;
 }
 
 @font-face {
@@ -9,50 +8,57 @@ body {
     font-weight: 400;
     src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
 }
-
+p, li {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 h2 {
     font-family: 'Hankc', serif !important;
     font-weight: 400;
 }
 
-iframe {
-    margin: auto;
-}
-
-.title {
-    text-align: center;
-}
-
-.ui.container {
-    margin-top: 4rem;
-}
-
-h1.ui.header {
-    display: none;
-}
-
-h1.ui.header:first-child {
-    margin-bottom: 0 !important;
-}
-
 h2.ui.header {
-    color: #fff;
     display: inline-block;
     font-weight: normal;
-    border-bottom: 3px solid #eee;
+    border-bottom: 3px solid #333;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
-.title{
-    height: 177px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-image: url(images/title-mini.png);
-    background-size: 325px 165px;
+iframe {
+    margin: auto;
+}
+.header {
+    text-align: center;
+}
+.header .title {
+    padding:3.5em 0 0 0;
+    text-align: center;
+}
+.header .link a{
+    color: #ccc;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-bottom:2px solid #283640;
+}
+.header .link a:hover {
+    border-bottom:2px solid #fff;
+    color: #fff;
 }
 
+.ui.grid.segment {
+    padding: 5rem 2rem;
+}
+
+.line {
+    border-top: 2px dashed #283640;
+    width: 100%;
+    margin: 6rem 0;
+}
+
+/*
 .ui.simple.segment {
     background-color: #222;
     border: 0;
@@ -129,31 +135,27 @@ h2.ui.header {
     margin: 1.5rem;
 }
 
-@media only screen and (max-width: 516px) {
-    .icons li {
-        margin: 0.2rem;
-        font-size: 1.2rem;
-    }
-}
+
+
+
+
 
 .icons a {
     color: white;
     text-decoration: none;
 }
-
+*/
 .mov {
     width: 640px;
     margin: 3rem auto 0 auto;
 }
 
-.illustrate {
-    text-align: center;
-    padding: 6rem 2rem;
+
+img.illustrate {
+    max-width: 200px;
+    margin: 8rem 0 8rem 0;
 }
 
-.illustrate > img {
-    max-width: 250px;
-}
 
 .illustrate #graph {
     width: 500px;
@@ -179,6 +181,7 @@ h2.ui.header {
     position: relative; /* If you want text inside of it */
 }
 
+
 .video-container iframe {
     display: block;
     position: absolute;
@@ -188,7 +191,30 @@ h2.ui.header {
     right: 0;
 }
 
-.center{
-    text-align: center;
-    margin-bottom: 10rem !important;
+@media only screen and (min-width: 1200px) {
+    .ui.container {
+        width : 1000px;
+    }
+}
+
+@media only screen and (max-width: 723px) {
+    .title img {
+        width: 80%;
+    }
+    .header .title {
+        padding:2em 0 0 0;
+    }
+}
+@media only screen and (max-width: 516px) {
+    body {
+        background-size: 200% auto;
+    }
+    .icons li {
+        margin: 0.2rem;
+        font-size: 1.2rem;
+    }
+    img.illustrate {
+        width: 100%;
+    }
+
 }
