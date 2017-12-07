@@ -156,6 +156,11 @@ img.illustrate {
     margin: 8rem 0 8rem 0;
 }
 
+img.illustrate.small{
+    width: 100px;
+    margin-right:357px;
+}
+
 
 .illustrate #graph {
     width: 500px;
@@ -216,5 +221,12 @@ img.illustrate {
     img.illustrate {
         width: 100%;
     }
+
+    img.illustrate.small{
+        width: 120px;
+        margin-right:inherit;
+    }
+
+
 
 }
