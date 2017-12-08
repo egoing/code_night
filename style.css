@@ -209,6 +209,10 @@ img.illustrate.small{
     .header .title {
         padding:2em 0 0 0;
     }
+    img.illustrate.small{
+        width: 120px;
+        margin-right:inherit;
+    }
 }
 @media only screen and (max-width: 516px) {
     body {
@@ -222,10 +226,7 @@ img.illustrate.small{
         width: 100%;
     }
 
-    img.illustrate.small{
-        width: 120px;
-        margin-right:inherit;
-    }
+
 
 
 
