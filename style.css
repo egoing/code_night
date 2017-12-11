@@ -226,8 +226,19 @@ img.illustrate.small{
         width: 100%;
     }
 
+}
+.supporter {
+    padding-right:10rem;
+}
+.supporter .name{
+    margin-bottom:0;
+}
 
+.supporter .profile{
+    margin-bottom: 0;
+    font-size:0.9rem;
+}
 
-
-
+.supporter .tech{
+    font-size:0.9rem;
 }
