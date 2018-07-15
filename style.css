@@ -247,10 +247,11 @@ img.illustrate.small{
 }
 .btn{
     text-decoration: none;
-    font-size:2rem;
+    font-size:1.8rem;
     font-family: 'Hankc', serif;
     color:white;
     padding:20px;
+    padding-top:25px;
     margin:20px;
     display:inline-block;
     border-radius: 10px;
